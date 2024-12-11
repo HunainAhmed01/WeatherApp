@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(images/bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+html, body {
+    height: 100%; 
+    background: url(images/bg-2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+nav{
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: none;
+    outline: none;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 55px;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+.card{
+    width: 50%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #00feba,#5b548a);
+    color: white;
+    margin: 15px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: none;
+    outline: none;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: none;
+    outline: none;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+.search img{
+    width: 16px;
+   
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 60px;
+    font-weight: 500;
+     font-family: "New Amsterdam", sans-serif;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+    font-family: "New Amsterdam", sans-serif;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img {
+    width: 40px;
+    padding-right: 10px;
+}
+.humidity, .wind  {
+    font-size: 25px;
+    margin-top: -20px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+.error img{
+   margin-top: 20px;
+    display: flex;
+    margin-left: 20%;
+}
+/* ------------------------------MAKING RESPONSIVE-------------------------------------- */
+@media (max-width: 440px) {
+    nav ul {
+        font-size: 50px;
+    }
+    .card {
+        width: 80%;
+        padding: 20px 15px;
+    }
+    .search input {
+        height: 50px;
+        font-size: 16px;
+    }
+    .search button {
+        height: 50px;
+        width: 50px;
+    }
+    .weather h1 {
+        font-size: 40px;
+    }
+    .weather h2 {
+        font-size: 30px;
+        margin-bottom: 120px;
+    }
+    .humidity, .wind {
+        font-size: 20px;
+    }
+    .details {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .col {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .error {
+        font-size: 18px;
+    }
+    .error img {
+        width: 150px;
+        margin-left: 0;
+    }
+    .weather-icon {
+        width: 100px;
+        height: auto;
+        margin: 15px 0;
+    }
+    .weather {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+}
+/* ------------------------------------------- THE END---------------------------------------------------- */
